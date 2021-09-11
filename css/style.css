@@ -1,0 +1,1045 @@
+/*==================================
+Common Css Starts
+==========================================*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*==================================
+Common Css Ends
+==========================================*/
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==================================
+Menu Css Starts
+==========================================*/
+nav{
+    background: #ffffff;
+    transition: all linear .5s;
+}
+
+.bg{
+    height: 98px;
+    width: 100%;
+    background-color: #19504a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav .navbar{
+    height: 98px;
+    display: flex;
+}
+
+nav .navbar .logo{
+    width: 190px;
+    height: 100%;
+    line-height: 95px;
+}
+
+nav .navbar .logo img{
+    width: 100%;
+}
+
+nav .navbar .menu-list{
+    width: 980px;
+    height: 100%;
+}
+
+nav .navbar .menu-list ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .navbar .menu-list ul li{
+    line-height: 95px;
+    padding: 0 35px; 
+}
+
+nav .navbar .menu-list ul li a{
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    transition: all linear .5s;
+}
+
+nav .navbar .menu-list ul li a:hover{
+    background-color: #ffc155;
+    color: #222222;
+    padding: 15px 20px;
+}
+/*==================================
+Menu Css Ends
+==========================================*/
+
+/*==================================
+Banner Css Starts
+==========================================*/
+#banner .banner-slider{
+    margin-top: 0;
+}
+
+#banner .banner-slider .banner-item{
+    height: 560px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .banner-slider .banner-item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#banner .banner-slider .banner-item .banner-text a{
+    height: 50px;
+    width: 152px;
+    border: 1px solid #709dca;
+    border-radius: 5px;
+    background: #709dca;
+    color: #ffffff;
+    padding: 17px 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all linear .4s;
+}
+
+#banner .banner-slider .banner-item .banner-text a:hover{
+    border: 1px solid #ffc155;
+    background: #ffc155;
+    color: #ffffff;
+}
+
+#banner .banner-slider .banner1{
+    background: url(../images/banner.jpg)no-repeat center / cover;
+}
+
+#banner .banner-slider .banner1 .banner-text{
+    text-align: center;
+}
+
+#banner .banner-slider .banner2{
+    background: url(../images/banner2.jpg)no-repeat center / cover;
+}
+
+#banner .banner-slider .banner2 .banner-text{
+    text-align: center;
+}
+
+#banner .banner-slider .banner3{
+    background: url(../images/banner3.jpg)no-repeat center / cover;
+}
+
+#banner .banner-slider .banner3 .banner-text{  
+    text-align: center;
+}
+
+#banner .banner-slider .banner4{
+    background: url(../images/banner4.jpg)no-repeat center / cover;
+}
+
+#banner .banner-slider .banner4 .banner-text{
+    text-align: center;
+}
+
+#banner .banner-slider .banner-item .banner-text h1{
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+    padding-top: 200px;
+}
+
+#banner .banner-slider .banner-item .banner-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+
+#banner .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner .slick-dots li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ffffff;
+    background: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#banner .slick-dots li .slick-active{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#banner .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+#banner .prev-arrow{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    border: 1px solid #709dca;
+    line-height: 34px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #ffc155;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 185px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+#banner .prev-arrow:hover{
+    color: #709dca;
+    border: 1px solid #ffc155;
+    background: #ffc155;
+}
+
+#banner .next-arrow{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    border: 1px solid #709dca;
+    line-height: 34px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #ffc155;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 185px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+#banner .next-arrow:hover{
+    color: #709dca;
+    border: 1px solid #ffc155;
+    background: #ffc155;
+}
+/*==================================
+Banner Css Ends
+==========================================*/
+
+/*==================================
+Services Css Starts
+==========================================*/
+#service .service-bg{
+    width: 100%;
+    height: 740px;
+}
+
+#service .service-bg .service-detail{
+    width: 100%;
+    height: 500px;;
+}
+
+#service .service-bg .service-detail .service-text{
+    height: 220px;
+    width: 100%;
+    text-align: center;
+}
+
+#service .service-bg .service-detail .service-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #709dca;
+    padding-top: 74px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#service .service-bg .service-detail .service-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #394b50;
+}
+
+#service .service-bg .service-detail .service-bottom{
+    height: 520px;
+    width: 100%;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer{
+    width: 100%;
+    height: 170px;
+    display: flex;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list .offer-img{
+    width: 32px;
+    height: 100%;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list .offer-img img{
+    width: 100%;
+    color: #709dca;
+    cursor: pointer;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list .offer-text{
+    width: 558px;
+    height: 100%;
+    padding-left: 24px;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list .offer-text h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #394b50;
+    margin-top: 4px;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-list .offer-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b;
+    width: 463px;
+    padding-top: 20px;
+}
+
+#service .service-bg .service-detail .service-bottom .serv-offer .offer-right{
+    width: 50%;
+    height: 100%;
+}
+/*==================================
+Services Css Ends
+==========================================*/
+
+/*==================================
+About Css Starts
+==========================================*/
+#about .about-bg{
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+
+#about .about-bg .about-img{
+    height: 100%;
+    width: 50%;
+}
+
+#about .about-bg .about-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#about .about-bg .about-text{
+    height: 100%;
+    width: 50%;
+    background-color: #ffc155;
+    padding-left: 80px;
+}
+
+#about .about-bg .about-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding-top: 96px;
+    padding-bottom: 38px;
+}
+
+#about .about-bg .about-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#about .about-bg .about-text .t-one{
+    width: 500px;
+    padding-bottom: 40px;
+}
+
+#about .about-bg .about-text .t-two{
+    width: 505px;
+    padding-bottom: 87px;
+}
+
+#about .about-bg .about-text a{
+    display: inline-block;
+    width: 85px;
+    height: 16px;
+    border: 1px solid #cb8d21;
+    background: #e7ad48;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 18px 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*==================================
+About Css Ends
+==========================================*/
+
+/*==================================
+Counter Css Starts
+==========================================*/
+#counter{
+    margin-top: 80px;
+    background: #709dca;
+    height: 150px;
+    width: 100%;
+}
+
+#counter .counter-main{
+    display: flex;
+}
+
+#counter .counter-item{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+#counter .counter-item h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+#counter .counter-item p{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #e7ad48;
+    text-transform: capitalize;
+}
+/*==================================
+Counter Css Ends
+==========================================*/
+
+/*==================================
+Portfolio Css Starts
+==========================================*/
+#portfolio{
+    height: 912px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#portfolio .port-content{
+    height: 295px;
+    width: 1170px;
+}
+
+#portfolio .port-content .port-header{
+    height: 240px;
+    width: 100%;
+    text-align: center;
+}
+
+#portfolio .port-content .port-header h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26.34px;
+    font-weight: bolder;
+    color: #709dca;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+
+#portfolio .port-content .port-header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #062033;
+    padding-top: 30px;
+}
+
+#portfolio .port-content .port-menu{
+    height: 55px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#portfolio .port-content .port-menu ul{
+    display: flex;
+    width: 715px;
+    margin: 0 auto;
+}
+
+#portfolio .port-content .port-menu li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 28px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#portfolio .port-content .port-menu li.active{
+    background: #709dca;
+    color: #ffffff;
+}
+
+#portfolio .port-item{
+    height: 565px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#portfolio .port-item .port-gallery{
+    width: 1500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#portfolio .port-item .port-img{
+    height: 283px;
+    width: 376px;
+    position: relative;
+}
+
+#portfolio .port-item .port-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .port-item .port-img .overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 376px;
+    height: 283px;
+    background: rgba(233, 176, 79, 0.9);
+    text-align: center;
+}
+
+#portfolio .port-item .port-img .overlay .over-icon{
+    height: 141px;
+    width: 100%;
+}
+
+#portfolio .port-item .port-img .overlay .over-icon i{
+    color: #ffffff;
+    font-size: 22px;
+    position: relative;
+    top: 80%;
+}
+
+#portfolio .port-item .port-img .overlay .over-icon i::after{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+#portfolio .port-item .port-img .overlay .over-text h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 25px;
+    height: 92px;
+    width: 100%;
+}
+
+#portfolio .port-item .port-img .overlay .over-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.17px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: -60px;
+}
+
+#portfolio .port-item .port-img:hover .overlay{
+    top: 0;
+}
+/*==================================
+Portfolio Css Ends
+==========================================*/
+
+/*==================================
+Testimonial Css Starts
+==========================================*/
+#testimonial{
+    height: 440px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#testimonial .container{
+    height: 440px;
+}
+
+#testimonial .container .testi-header{
+    height: 172px;
+    width: 100%;
+    text-align: center;
+}
+
+#testimonial .container .testi-header h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26.34px;
+    font-weight: bolder;
+    color: #709dca;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+#testimonial .container .client-box{
+    width: 1040px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#testimonial .container .testi-footer{
+    height: 268px;
+    width: 100%;
+}
+
+#testimonial .container .testi-footer .testi-client{
+    height: 128px;
+    width: 466px;
+    background-color: #f6f3f3;
+    position: relative;
+}
+
+#testimonial .container .testi-footer .testi-client p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: italic;
+    color: #747474;
+    padding: 20px 25px;
+    width: 429px;
+}
+
+#testimonial .container .testi-footer .testi-client .testi-box{
+    height: 33px;
+    width: 16px;
+    background-color: #f6f3f3;
+    position: absolute;
+    bottom: -16px;
+    left: 59px;
+    transform: rotateZ(781deg);
+}
+
+#testimonial .container .testi-footer .client{
+    height: 75px;
+    width: 365px;
+    display: flex;
+}
+
+#testimonial .container .testi-footer .client .client-img{
+    width: 10%;
+}
+
+#testimonial .container .testi-footer .client .client-img img{
+    margin-top: 12px;
+    margin-left: 17px;
+}
+
+#testimonial .container .testi-footer .client .client-name{
+    width: 90%;
+}
+
+#testimonial .container .testi-footer .client .client-name h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4d4e50;
+    text-transform: capitalize;
+    margin-top: 21px;
+    margin-left: 38px;
+}
+
+#testimonial .container .testi-footer .client .client-name span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4d4e50;
+}
+
+#testimonial .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 190px;
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+#testimonial .slick-dots li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #273a43;
+    background: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li .slick-active{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background: #273a43;
+}
+
+#testimonial .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+/*==================================
+Testimonial Css Ends
+==========================================*/
+
+/*==================================
+Footer Css Starts
+==========================================*/
+#footer{
+    height: 400px;
+    width: 100%;
+    background-color: #273a43;
+    margin-top: 80px;
+}
+
+#footer .footer-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-content .footer-logo{
+    height: 100%;
+    width: 270px;
+}
+
+#footer .footer-content .footer-logo img{
+    padding-top: 72px;
+    padding-bottom: 25px;
+}
+
+#footer .footer-content .footer-logo p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 20px;
+}
+
+#footer .footer-content .contact{
+    height: 100%;
+    width: 270px;
+}
+
+#footer .footer-content .foot-head h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 72px;
+    padding-bottom: 18px;
+    text-transform: capitalize;
+}
+
+#footer .footer-content .foot-head p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 20px;
+    padding-bottom: 23px;
+}
+
+#footer .footer-content .contact .contact-icon{
+    height: 140px;
+    width: 100%;
+}
+
+#footer .footer-content .contact .contact-icon .location{
+    height: 44px;
+    width: 100%;
+}
+
+#footer .footer-content .contact .contact-icon .icon i{
+    font-size: 21.5px;
+    color: #71b6d5;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+#footer .footer-content .contact .contact-icon .icon i:hover{
+  color: #ffc155;
+}
+
+#footer .footer-content .contact .contact-icon .icon span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 22px;
+}
+
+#footer .footer-content .contact .contact-icon .message{
+    height: 44px;
+    width: 100%;
+}
+
+#footer .footer-content .contact .contact-icon .icon .middle{
+    margin-left: 15px;
+}
+
+#footer .footer-content .contact .contact-icon .call{
+    height: 44px;
+    width: 100%;
+}
+
+#footer .footer-content .tweets{
+    height: 100%;
+    width: 280px;
+}
+
+#footer .footer-content .tweets .tweet-text{
+    height: 223px;
+    width: 100%;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-icon{
+    height: 100%;
+    width: 10%;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-icon i{
+    font-size: 21.5px;
+    color: #71b6d5;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-icon i:hover{
+    color: #ffc155;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-text{
+    height: 100%;
+    width: 90%;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c3c3c3;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet .t-text .time{
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #71b6d5;
+}
+
+#footer .footer-content .tweets .tweet-text .tweet2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+#footer .footer-content .news-letter{
+    height: 100%;
+    width: 270px;
+}
+
+#footer .footer-content .news-letter .form{
+    height: 55px;
+    width: 100%;
+}
+
+#footer .footer-content .news-letter .form input{
+    background: #172227;
+    height: 35px;
+    width: 172px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #172227;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 10px;
+    position: relative;
+}
+
+#footer .footer-content .news-letter .form small{
+    position: absolute;
+    color: #ffffff;
+    margin-top: 44px;
+    margin-left: -182px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+}
+ 
+#footer .footer-content .news-letter .form button{
+    height: 35px;
+    width: 85px;
+    background-color: #71b6d5;
+    border: 1px solid #71b6d5;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+#footer .footer-content .news-letter .form button:hover{
+    
+}
+/*==================================
+Footer Css Ends
+==========================================*/
+
+/*==================================
+Down box Css Starts
+==========================================*/
+.back-to-top{
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    display: none;
+    background: #709dca;
+    border-radius: 8px;
+}
+
+.back-to-top i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-size: 25px;
+}
+/*==================================
+Down box Css Ends
+==========================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
